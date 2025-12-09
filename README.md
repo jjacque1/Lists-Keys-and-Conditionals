@@ -2,7 +2,7 @@
 
 Lists, Keys, and Conditionals Lab
 
-# Logic planning
+# TaskItem.tsx logic planning
 
 User selects new status
     =>
@@ -14,5 +14,5 @@ App updates the tasks state
     =>
 React re-renders UI with the new status
 
-# TaskItem.tsx logic planning
+
 
