@@ -1,4 +1,4 @@
-import './App.css'
+import "./App.css";
 
 import { useState } from "react";
 import { Task, TaskStatus } from "./types";
@@ -6,8 +6,15 @@ import { TaskList } from "./components/TaskList/TaskList";
 import { TaskFilter } from "./components/TaskFilter/TaskFilter";
 
 function App() {
-
-    const initialTasks: Task[] = [
+  const starterTasks: Task[] = [
+    {
+      id: "4",
+      title: "Make Stupid Moneysss",
+      description: "Slowly work my way up the tech space.",
+      status: "pending",
+      priority: "low",
+      dueDate: "12-30-2026",
+    },
     {
       id: "1",
       title: "Study React",
@@ -32,23 +39,17 @@ function App() {
       priority: "high",
       dueDate: "12-10-2025",
     },
-    {
-      id: "4",
-      title: "Make Stupid Moneysss",
-      description: "Slowly work my way up the tech space.",
-      status: "pending",
-      priority: "low",
-      dueDate: "12-30-2026",
-    },
   ];
 
-  return (
+  const [task, setTasks] = useState<Task[]>(starterTasks);
+  const [statusFilter, setStatusFilter] = useState<TaskStatus | undefined>(
+    undefined
+  );
+  const [priorityFilter, setPriorityFilter] = useState<
+    "low" | "medium" | "high" | undefined
+  >(undefined);
 
-  
-    <>
-    
-    </>
-  )
+  return <></>;
 }
 
-export default App
+export default App;
