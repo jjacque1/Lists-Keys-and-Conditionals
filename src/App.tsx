@@ -96,7 +96,7 @@ function handleFilterChange(filters: {
     });
 
   return (
-  <>
+  <div className="container">
      <h1>Task Manager</h1>
     
         
@@ -108,7 +108,7 @@ function handleFilterChange(filters: {
             onStatusChange={handleStatusChange}
             onDelete={handleDelete}
           />
-  </>
+  </div>
 );
 }
 

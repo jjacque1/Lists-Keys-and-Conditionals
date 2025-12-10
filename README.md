@@ -2,6 +2,10 @@
 
 Lists, Keys, and Conditionals Lab
 
+# My Solution ScreenShot: 
+
+
+
 # planning
 
 User selects a new status from the dropdown

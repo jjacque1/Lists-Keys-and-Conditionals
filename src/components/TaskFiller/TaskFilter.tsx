@@ -66,10 +66,10 @@ export function TaskFilter(props: TaskFilterProps) {
   //===============================================================================
 
   return (
-    <div>
-      <div>
-        <p>Status:</p>
-        <select
+    <div className="filters">
+      <div className="select-wrapper">
+        <p className="para">Status:</p>
+        <select className="select"
           value={selectedStatus === undefined ? "" : selectedStatus}
           onChange={handleStatusChange}
         >
@@ -80,9 +80,9 @@ export function TaskFilter(props: TaskFilterProps) {
         </select>
       </div>
 
-      <div>
-        <p>Priority:</p>
-        <select
+      <div className="select-wrapper">
+        <p className="para">Priority:</p>
+        <select className="select"
           value={seletedPriority === undefined ? "" : seletedPriority}
           onChange={handlePriorityChange}
         >
