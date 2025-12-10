@@ -1,5 +1,4 @@
-import React from "react";
-import { TaskListProps } from "../../types";
+import type { TaskListProps } from "../../types";
 import { TaskItem } from "../TaskItem/TaskItem";
 
 export function TaskList(props: TaskListProps) {
@@ -11,4 +10,18 @@ export function TaskList(props: TaskListProps) {
    if (tasks.length === 0) {
       return <p>No tasks to show.</p>;
     }
+
+ return (
+    <ul>
+      {tasks.map((task) => (
+        <li key={task.id}>
+          <TaskItem
+            task={task}
+            onStatusChange={onStatusChange}
+            onDelete={onDelete}
+          />
+        </li>
+      ))}
+    </ul>
+  );
 }
