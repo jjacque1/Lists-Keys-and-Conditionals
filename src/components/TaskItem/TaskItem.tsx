@@ -15,6 +15,8 @@ export function TaskItem({ task, onStatusChange, onDelete }: TaskItemProps) {
     onDelete(task.id);
   }
 
+  //======================================================================
+
   return (
     <div>
       <div>
